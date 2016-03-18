@@ -1,0 +1,2546 @@
+[
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Equals method should not assume anything about the type of its argument",
+    "patternId": "BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Check for sign of bitwise operation",
+    "patternId": "BIT_SIGNED_CHECK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class implements Cloneable but does not define or use clone method",
+    "patternId": "CN_IDIOM"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "clone method does not call super.clone()",
+    "patternId": "CN_IDIOM_NO_SUPER_CALL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines clone() but doesn't implement Cloneable",
+    "patternId": "CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Rough value of known constant found",
+    "patternId": "CNT_ROUGH_CONSTANT_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Abstract class defines covariant compareTo() method",
+    "patternId": "CO_ABSTRACT_SELF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "compareTo()/compare() incorrectly handles float or double value",
+    "patternId": "CO_COMPARETO_INCORRECT_FLOATING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "compareTo()/compare() returns Integer.MIN_VALUE",
+    "patternId": "CO_COMPARETO_RESULTS_MIN_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Covariant compareTo() method defined",
+    "patternId": "CO_SELF_NO_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method might drop exception",
+    "patternId": "DE_MIGHT_DROP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method might ignore exception",
+    "patternId": "DE_MIGHT_IGNORE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Adding elements of an entry set may fail due to reuse of Entry objects",
+    "patternId": "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Random object created and used only once",
+    "patternId": "DMI_RANDOM_USED_ONLY_ONCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Don't use removeAll to clear a collection",
+    "patternId": "DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes System.exit(...)",
+    "patternId": "DM_EXIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes dangerous method runFinalizersOnExit",
+    "patternId": "DM_RUN_FINALIZERS_ON_EXIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Comparison of String parameter using == or !=",
+    "patternId": "ES_COMPARING_PARAMETER_STRING_WITH_EQ"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Comparison of String objects using == or !=",
+    "patternId": "ES_COMPARING_STRINGS_WITH_EQ"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Abstract class defines covariant equals() method",
+    "patternId": "EQ_ABSTRACT_SELF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Equals checks for incompatible operand",
+    "patternId": "EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines compareTo(...) and uses Object.equals()",
+    "patternId": "EQ_COMPARETO_USE_OBJECT_EQUALS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals method fails for subtypes",
+    "patternId": "EQ_GETCLASS_AND_CLASS_CONSTANT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Covariant equals() method defined",
+    "patternId": "EQ_SELF_NO_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Empty finalizer should be deleted",
+    "patternId": "FI_EMPTY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Explicit invocation of finalizer",
+    "patternId": "FI_EXPLICIT_INVOCATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer nulls fields",
+    "patternId": "FI_FINALIZER_NULLS_FIELDS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer only nulls fields",
+    "patternId": "FI_FINALIZER_ONLY_NULLS_FIELDS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer does not call superclass finalizer",
+    "patternId": "FI_MISSING_SUPER_CALL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer nullifies superclass finalizer",
+    "patternId": "FI_NULLIFY_SUPER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer does nothing but call superclass finalizer",
+    "patternId": "FI_USELESS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Format string should use %n rather than \\n",
+    "patternId": "VA_FORMAT_STRING_USES_NEWLINE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unchecked type in generic call",
+    "patternId": "GC_UNCHECKED_TYPE_IN_GENERIC_CALL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines equals() but not hashCode()",
+    "patternId": "HE_EQUALS_NO_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines equals() and uses Object.hashCode()",
+    "patternId": "HE_EQUALS_USE_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines hashCode() but not equals()",
+    "patternId": "HE_HASHCODE_NO_EQUALS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines hashCode() and uses Object.equals()",
+    "patternId": "HE_HASHCODE_USE_OBJECT_EQUALS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class inherits equals() and uses Object.hashCode()",
+    "patternId": "HE_INHERITS_EQUALS_USE_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Superclass uses subclass during initialization",
+    "patternId": "IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dubious catching of IllegalMonitorStateException",
+    "patternId": "IMSE_DONT_CATCH_IMSE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Needless instantiation of class that only supplies static methods",
+    "patternId": "ISC_INSTANTIATE_STATIC_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Iterator next() method can't throw NoSuchElementException",
+    "patternId": "IT_NO_SUCH_ELEMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Store of non serializable object into HttpSession",
+    "patternId": "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Fields of immutable classes should be final",
+    "patternId": "JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Public enum method unconditionally sets its field",
+    "patternId": "ME_ENUM_FIELD_SETTER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Enum field is public and mutable",
+    "patternId": "ME_MUTABLE_ENUM_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method with Boolean return type returns explicit null",
+    "patternId": "NP_BOOLEAN_RETURN_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Clone method may return null",
+    "patternId": "NP_CLONE_COULD_RETURN_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals() method does not check for null argument",
+    "patternId": "NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "toString method may return null",
+    "patternId": "NP_TOSTRING_COULD_RETURN_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class names should start with an upper case letter",
+    "patternId": "NM_CLASS_NAMING_CONVENTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class is not derived from an Exception, even though it is named as such",
+    "patternId": "NM_CLASS_NOT_EXCEPTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Confusing method names",
+    "patternId": "NM_CONFUSING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field names should start with a lower case letter",
+    "patternId": "NM_FIELD_NAMING_CONVENTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Use of identifier that is a keyword in later versions of Java",
+    "patternId": "NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Use of identifier that is a keyword in later versions of Java",
+    "patternId": "NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method names should start with a lower case letter",
+    "patternId": "NM_METHOD_NAMING_CONVENTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class names shouldn't shadow simple name of implemented interface",
+    "patternId": "NM_SAME_SIMPLE_NAME_AS_INTERFACE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class names shouldn't shadow simple name of superclass",
+    "patternId": "NM_SAME_SIMPLE_NAME_AS_SUPERCLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Very confusing method names (but perhaps intentional)",
+    "patternId": "NM_VERY_CONFUSING_INTENTIONAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method doesn't override method in superclass due to wrong package for parameter",
+    "patternId": "NM_WRONG_PACKAGE_INTENTIONAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to close database resource",
+    "patternId": "ODR_OPEN_DATABASE_RESOURCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to close database resource on exception",
+    "patternId": "ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to close stream",
+    "patternId": "OS_OPEN_STREAM"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to close stream on exception",
+    "patternId": "OS_OPEN_STREAM_EXCEPTION_PATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Don't reuse entry objects in iterators",
+    "patternId": "PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Suspicious reference comparison to constant",
+    "patternId": "RC_REF_COMPARISON_BAD_PRACTICE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Suspicious reference comparison of Boolean values",
+    "patternId": "RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method ignores results of InputStream.read()",
+    "patternId": "RR_NOT_CHECKED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method ignores results of InputStream.skip()",
+    "patternId": "SR_NOT_CHECKED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Negating the result of compareTo()/compare()",
+    "patternId": "RV_NEGATING_RESULT_OF_COMPARETO"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method ignores exceptional return value",
+    "patternId": "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Static initializer creates instance before all static final fields assigned",
+    "patternId": "SI_INSTANCE_BEFORE_FINALS_ASSIGNED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Certain swing methods needs to be invoked in Swing thread",
+    "patternId": "SW_SWING_METHODS_INVOKED_IN_SWING_THREAD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-transient non-serializable instance field in serializable class",
+    "patternId": "SE_BAD_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-serializable class has a serializable inner class",
+    "patternId": "SE_BAD_FIELD_INNER_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-serializable value stored into instance field of a serializable class",
+    "patternId": "SE_BAD_FIELD_STORE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Comparator doesn't implement Serializable",
+    "patternId": "SE_COMPARATOR_SHOULD_BE_SERIALIZABLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Serializable inner class",
+    "patternId": "SE_INNER_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "serialVersionUID isn't final",
+    "patternId": "SE_NONFINAL_SERIALVERSIONID"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "serialVersionUID isn't long",
+    "patternId": "SE_NONLONG_SERIALVERSIONID"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "serialVersionUID isn't static",
+    "patternId": "SE_NONSTATIC_SERIALVERSIONID"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class is Serializable but its superclass doesn't define a void constructor",
+    "patternId": "SE_NO_SUITABLE_CONSTRUCTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class is Externalizable but doesn't define a void constructor",
+    "patternId": "SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "The readResolve method must be declared with a return type of Object.",
+    "patternId": "SE_READ_RESOLVE_MUST_RETURN_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Transient field that isn't set by deserialization.",
+    "patternId": "SE_TRANSIENT_FIELD_NOT_RESTORED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class is Serializable, but doesn't define serialVersionUID",
+    "patternId": "SE_NO_SERIALVERSIONID"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Usage of GetResource may be unsafe if class is extended",
+    "patternId": "UI_INHERITANCE_UNSAFE_GETRESOURCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Impossible cast",
+    "patternId": "BC_IMPOSSIBLE_CAST"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Impossible downcast",
+    "patternId": "BC_IMPOSSIBLE_DOWNCAST"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Impossible downcast of toArray() result",
+    "patternId": "BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "instanceof will always return false",
+    "patternId": "BC_IMPOSSIBLE_INSTANCEOF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bitwise add of signed byte value",
+    "patternId": "BIT_ADD_OF_SIGNED_BYTE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Incompatible bit masks",
+    "patternId": "BIT_AND"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Check to see if ((...) & 0) == 0",
+    "patternId": "BIT_AND_ZZ"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Incompatible bit masks",
+    "patternId": "BIT_IOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bitwise OR of signed byte value",
+    "patternId": "BIT_IOR_OF_SIGNED_BYTE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Check for sign of bitwise operation",
+    "patternId": "BIT_SIGNED_CHECK_HIGH_BIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class overrides a method implemented in super class Adapter wrongly",
+    "patternId": "BOA_BADLY_OVERRIDDEN_ADAPTER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible bad parsing of shift operation",
+    "patternId": "BSHIFT_WRONG_ADD_PRIORITY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "32 bit int shifted by an amount not in the range -31..31",
+    "patternId": "ICAST_BAD_SHIFT_AMOUNT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless increment in return statement",
+    "patternId": "DLS_DEAD_LOCAL_INCREMENT_IN_RETURN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store of class literal",
+    "patternId": "DLS_DEAD_STORE_OF_CLASS_LITERAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Overwritten increment",
+    "patternId": "DLS_OVERWRITTEN_INCREMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Reversed method arguments",
+    "patternId": "DMI_ARGUMENTS_WRONG_ORDER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad constant value for month",
+    "patternId": "DMI_BAD_MONTH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "BigDecimal constructed from double that isn't represented precisely",
+    "patternId": "DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "hasNext method invokes next",
+    "patternId": "DMI_CALLING_NEXT_FROM_HASNEXT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Collections should not contain themselves",
+    "patternId": "DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "D'oh! A nonsensical method invocation",
+    "patternId": "DMI_DOH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invocation of hashCode on an array",
+    "patternId": "DMI_INVOKING_HASHCODE_ON_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Double.longBitsToDouble invoked on an int",
+    "patternId": "DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Vacuous call to collections",
+    "patternId": "DMI_VACUOUS_SELF_COLLECTION_CALL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Can't use reflection to check for presence of annotation without runtime retention",
+    "patternId": "DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Futile attempt to change max pool size of ScheduledThreadPoolExecutor",
+    "patternId": "DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Creation of ScheduledThreadPoolExecutor with zero core threads",
+    "patternId": "DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless/vacuous call to EasyMock method",
+    "patternId": "DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Incorrect combination of Math.max and Math.min",
+    "patternId": "DM_INVALID_MIN_MAX"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals() used to compare array and nonarray",
+    "patternId": "EC_ARRAY_AND_NONARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invocation of equals() on an array, which is equivalent to ==",
+    "patternId": "EC_BAD_ARRAY_COMPARE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals(...) used to compare incompatible arrays",
+    "patternId": "EC_INCOMPATIBLE_ARRAY_COMPARE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to equals(null)",
+    "patternId": "EC_NULL_ARG"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to equals() comparing unrelated class and interface",
+    "patternId": "EC_UNRELATED_CLASS_AND_INTERFACE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to equals() comparing different interface types",
+    "patternId": "EC_UNRELATED_INTERFACES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to equals() comparing different types",
+    "patternId": "EC_UNRELATED_TYPES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Using pointer equality to compare different types",
+    "patternId": "EC_UNRELATED_TYPES_USING_POINTER_EQUALITY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals method always returns false",
+    "patternId": "EQ_ALWAYS_FALSE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals method always returns true",
+    "patternId": "EQ_ALWAYS_TRUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals method compares class names rather than class objects",
+    "patternId": "EQ_COMPARING_CLASS_NAMES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Covariant equals() method defined for enum",
+    "patternId": "EQ_DONT_DEFINE_EQUALS_FOR_ENUM"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals() method defined that doesn't override equals(Object)",
+    "patternId": "EQ_OTHER_NO_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals() method defined that doesn't override Object.equals(Object)",
+    "patternId": "EQ_OTHER_USE_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "equals method overrides equals in superclass and may not be symmetric",
+    "patternId": "EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Covariant equals() method defined, Object.equals(Object) inherited",
+    "patternId": "EQ_SELF_USE_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Doomed test for equality to NaN",
+    "patternId": "FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Format string placeholder incompatible with passed argument",
+    "patternId": "VA_FORMAT_STRING_BAD_ARGUMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "The type of a supplied argument doesn't match format specifier",
+    "patternId": "VA_FORMAT_STRING_BAD_CONVERSION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "MessageFormat supplied where printf style format expected",
+    "patternId": "VA_FORMAT_STRING_EXPECTED_MESSAGE_FORMAT_SUPPLIED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "More arguments are passed than are actually used in the format string",
+    "patternId": "VA_FORMAT_STRING_EXTRA_ARGUMENTS_PASSED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Illegal format string",
+    "patternId": "VA_FORMAT_STRING_ILLEGAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Format string references missing argument",
+    "patternId": "VA_FORMAT_STRING_MISSING_ARGUMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "No previous argument for format string",
+    "patternId": "VA_FORMAT_STRING_NO_PREVIOUS_ARGUMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "No relationship between generic parameter and method argument",
+    "patternId": "GC_UNRELATED_TYPES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Signature declares use of unhashable class in hashed construct",
+    "patternId": "HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Use of class without a hashCode() method in a hashed data structure",
+    "patternId": "HE_USE_OF_UNHASHABLE_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "int value converted to long and used as absolute time",
+    "patternId": "ICAST_INT_2_LONG_AS_INSTANT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Integral value cast to double and then passed to Math.ceil",
+    "patternId": "ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "int value cast to float and then passed to Math.round",
+    "patternId": "ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "JUnit assertion in run method will not be noticed by JUnit",
+    "patternId": "IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "TestCase declares a bad suite method",
+    "patternId": "IJU_BAD_SUITE_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "TestCase has no tests",
+    "patternId": "IJU_NO_TESTS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "TestCase defines setUp that doesn't call super.setUp()",
+    "patternId": "IJU_SETUP_NO_SUPER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "TestCase implements a non-static suite method",
+    "patternId": "IJU_SUITE_NOT_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "TestCase defines tearDown that doesn't call super.tearDown()",
+    "patternId": "IJU_TEARDOWN_NO_SUPER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A collection is added to itself",
+    "patternId": "IL_CONTAINER_ADDED_TO_ITSELF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "An apparent infinite loop",
+    "patternId": "IL_INFINITE_LOOP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "An apparent infinite recursive loop",
+    "patternId": "IL_INFINITE_RECURSIVE_LOOP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Integer multiply of result of integer remainder",
+    "patternId": "IM_MULTIPLYING_RESULT_OF_IREM"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad comparison of int value with long constant",
+    "patternId": "INT_BAD_COMPARISON_WITH_INT_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad comparison of nonnegative value with negative constant or zero",
+    "patternId": "INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad comparison of signed byte",
+    "patternId": "INT_BAD_COMPARISON_WITH_SIGNED_BYTE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Doomed attempt to append to an object output stream",
+    "patternId": "IO_APPENDING_TO_OBJECT_OUTPUT_STREAM"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A parameter is dead upon entry to a method but overwritten",
+    "patternId": "IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines field that masks a superclass field",
+    "patternId": "MF_CLASS_MASKS_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method defines a variable that obscures a field",
+    "patternId": "MF_METHOD_MASKS_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Null pointer dereference",
+    "patternId": "NP_ALWAYS_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Null pointer dereference in method on exception path",
+    "patternId": "NP_ALWAYS_NULL_EXCEPTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method does not check for null argument",
+    "patternId": "NP_ARGUMENT_MIGHT_BE_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "close() invoked on a value that is always null",
+    "patternId": "NP_CLOSING_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Null value is guaranteed to be dereferenced",
+    "patternId": "NP_GUARANTEED_DEREF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value is null and guaranteed to be dereferenced on exception path",
+    "patternId": "NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-null field is not initialized",
+    "patternId": "NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method call passes null to a non-null parameter",
+    "patternId": "NP_NONNULL_PARAM_VIOLATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may return null, but is declared @Nonnull",
+    "patternId": "NP_NONNULL_RETURN_VIOLATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A known null value is checked to see if it is an instance of a type",
+    "patternId": "NP_NULL_INSTANCEOF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible null pointer dereference",
+    "patternId": "NP_NULL_ON_SOME_PATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible null pointer dereference in method on exception path",
+    "patternId": "NP_NULL_ON_SOME_PATH_EXCEPTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method call passes null for non-null parameter",
+    "patternId": "NP_NULL_PARAM_DEREF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method call passes null for non-null parameter",
+    "patternId": "NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-virtual method call passes null for non-null parameter",
+    "patternId": "NP_NULL_PARAM_DEREF_NONVIRTUAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method with Optional return type returns explicit null",
+    "patternId": "NP_OPTIONAL_RETURN_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Store of null value into field annotated @Nonnull",
+    "patternId": "NP_STORE_INTO_NONNULL_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Read of unwritten field",
+    "patternId": "NP_UNWRITTEN_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines equal(Object); should it be equals(Object)?",
+    "patternId": "NM_BAD_EQUAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines hashcode(); should it be hashCode()?",
+    "patternId": "NM_LCASE_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class defines tostring(); should it be toString()?",
+    "patternId": "NM_LCASE_TOSTRING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Apparent method/constructor confusion",
+    "patternId": "NM_METHOD_CONSTRUCTOR_CONFUSION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Very confusing method names",
+    "patternId": "NM_VERY_CONFUSING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method doesn't override method in superclass due to wrong package for parameter",
+    "patternId": "NM_WRONG_PACKAGE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method assigns boolean literal in boolean expression",
+    "patternId": "QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Array index is out of bounds",
+    "patternId": "RANGE_ARRAY_INDEX"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Array length is out of bounds",
+    "patternId": "RANGE_ARRAY_LENGTH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Array offset is out of bounds",
+    "patternId": "RANGE_ARRAY_OFFSET"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "String index is out of bounds",
+    "patternId": "RANGE_STRING_INDEX"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Suspicious reference comparison",
+    "patternId": "RC_REF_COMPARISON"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Nullcheck of value previously dereferenced",
+    "patternId": "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invalid syntax for regular expression",
+    "patternId": "RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "File.separator used for regular expression",
+    "patternId": "RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "\".\" or \"|\" used for regular expression",
+    "patternId": "RE_POSSIBLE_UNINTENDED_PATTERN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Random value from 0 to 1 is coerced to the integer 0",
+    "patternId": "RV_01_TO_INT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad attempt to compute absolute value of signed 32-bit hashcode",
+    "patternId": "RV_ABSOLUTE_VALUE_OF_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Bad attempt to compute absolute value of signed random integer",
+    "patternId": "RV_ABSOLUTE_VALUE_OF_RANDOM_INT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Code checks for specific values returned by compareTo",
+    "patternId": "RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Exception created and dropped rather than thrown",
+    "patternId": "RV_EXCEPTION_NOT_THROWN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method ignores return value",
+    "patternId": "RV_RETURN_VALUE_IGNORED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Repeated conditional tests",
+    "patternId": "RpC_REPEATED_CONDITIONAL_TEST"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Self assignment of field",
+    "patternId": "SA_FIELD_SELF_ASSIGNMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Self comparison of field with itself",
+    "patternId": "SA_FIELD_SELF_COMPARISON"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Nonsensical self computation involving a field (e.g., x & x)",
+    "patternId": "SA_FIELD_SELF_COMPUTATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Self assignment of local rather than assignment to field",
+    "patternId": "SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Self comparison of value with itself",
+    "patternId": "SA_LOCAL_SELF_COMPARISON"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Nonsensical self computation involving a variable (e.g., x & x)",
+    "patternId": "SA_LOCAL_SELF_COMPUTATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store due to switch statement fall through",
+    "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store due to switch statement fall through to throw",
+    "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Deadly embrace of non-static inner class and thread local",
+    "patternId": "SIC_THREADLOCAL_DEADLY_EMBRACE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unnecessary type check done using instanceof operator",
+    "patternId": "SIO_SUPERFLUOUS_INSTANCEOF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method attempts to access a prepared statement parameter with index 0",
+    "patternId": "SQL_BAD_PREPARED_STATEMENT_ACCESS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method attempts to access a result set field with index 0",
+    "patternId": "SQL_BAD_RESULTSET_ACCESS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unneeded use of currentThread() call, to call interrupted()",
+    "patternId": "STI_INTERRUPTED_ON_CURRENTTHREAD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Static Thread.interrupted() method invoked on thread instance",
+    "patternId": "STI_INTERRUPTED_ON_UNKNOWNTHREAD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method must be private in order for serialization to work",
+    "patternId": "SE_METHOD_MUST_BE_PRIVATE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "The readResolve method must not be declared as a static method.",
+    "patternId": "SE_READ_RESOLVE_IS_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value annotated as carrying a type qualifier used where a value that must not carry that qualifier is required",
+    "patternId": "TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Comparing values with incompatible type qualifiers",
+    "patternId": "TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value that might not carry a type qualifier is always used in a way requires that type qualifier",
+    "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value that might carry a type qualifier is always used in a way prohibits it from having that type qualifier",
+    "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value annotated as never carrying a type qualifier used where value carrying that qualifier is required",
+    "patternId": "TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value without a type qualifier used where a value is required to have that qualifier",
+    "patternId": "TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Uncallable method defined in anonymous class",
+    "patternId": "UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Uninitialized read of field in constructor",
+    "patternId": "UR_UNINIT_READ"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Uninitialized read of field method called from constructor of superclass",
+    "patternId": "UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invocation of toString on an unnamed array",
+    "patternId": "DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invocation of toString on an array",
+    "patternId": "DMI_INVOKING_TOSTRING_ON_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Array formatted in useless way using format string",
+    "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_FROM_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field only ever set to null",
+    "patternId": "UWF_NULL_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unwritten field",
+    "patternId": "UWF_UNWRITTEN_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Primitive array passed to function expecting a variable number of object arguments",
+    "patternId": "VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Potential lost logger changes due to weak reference in OpenJDK",
+    "patternId": "LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to clean up stream or resource",
+    "patternId": "OBL_UNSATISFIED_OBLIGATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method may fail to clean up stream or resource on checked exception",
+    "patternId": "OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Consider using Locale parameterized version of invoked method",
+    "patternId": "DM_CONVERT_CASE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Reliance on default encoding",
+    "patternId": "DM_DEFAULT_ENCODING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Classloaders should only be created inside doPrivileged block",
+    "patternId": "DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invoked that should be only be invoked inside a doPrivileged block",
+    "patternId": "DP_DO_INSIDE_DO_PRIVILEGED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "May expose internal representation by returning reference to mutable object",
+    "patternId": "EI_EXPOSE_REP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "May expose internal representation by incorporating reference to mutable object",
+    "patternId": "EI_EXPOSE_REP2"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Finalizer should be protected, not public",
+    "patternId": "FI_PUBLIC_SHOULD_BE_PROTECTED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "May expose internal static state by storing a mutable object into a static field",
+    "patternId": "EI_EXPOSE_STATIC_REP2"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field isn't final and can't be protected from malicious code",
+    "patternId": "MS_CANNOT_BE_FINAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Public static method may expose internal representation by returning array",
+    "patternId": "MS_EXPOSE_REP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field should be both final and package protected",
+    "patternId": "MS_FINAL_PKGPROTECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field is a mutable array",
+    "patternId": "MS_MUTABLE_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field is a mutable collection",
+    "patternId": "MS_MUTABLE_COLLECTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field is a mutable collection which should be package protected",
+    "patternId": "MS_MUTABLE_COLLECTION_PKGPROTECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field is a mutable Hashtable",
+    "patternId": "MS_MUTABLE_HASHTABLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field should be moved out of an interface and made package protected",
+    "patternId": "MS_OOI_PKGPROTECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field should be package protected",
+    "patternId": "MS_PKGPROTECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field isn't final but should be",
+    "patternId": "MS_SHOULD_BE_FINAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field isn't final but should be refactored to be so",
+    "patternId": "MS_SHOULD_BE_REFACTORED_TO_BE_FINAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Sequence of calls to concurrent abstraction may not be atomic",
+    "patternId": "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible double check of field",
+    "patternId": "DC_DOUBLECHECK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible exposure of partially initialized object",
+    "patternId": "DC_PARTIALLY_CONSTRUCTED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on Boolean",
+    "patternId": "DL_SYNCHRONIZATION_ON_BOOLEAN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on boxed primitive",
+    "patternId": "DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on interned String",
+    "patternId": "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on boxed primitive values",
+    "patternId": "DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Monitor wait() called on Condition",
+    "patternId": "DM_MONITOR_WAIT_ON_CONDITION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A thread was created using the default empty run method",
+    "patternId": "DM_USELESS_THREAD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Empty synchronized block",
+    "patternId": "ESync_EMPTY_SYNC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Inconsistent synchronization",
+    "patternId": "IS2_INCONSISTENT_SYNC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field not guarded against concurrent access",
+    "patternId": "IS_FIELD_NOT_GUARDED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization performed on Lock",
+    "patternId": "JLM_JSR166_LOCK_MONITORENTER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization performed on util.concurrent instance",
+    "patternId": "JLM_JSR166_UTILCONCURRENT_MONITORENTER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Using monitor style wait methods on util.concurrent abstraction",
+    "patternId": "JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Incorrect lazy initialization of static field",
+    "patternId": "LI_LAZY_INIT_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Incorrect lazy initialization and update of static field",
+    "patternId": "LI_LAZY_INIT_UPDATE_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on field in futile attempt to guard that field",
+    "patternId": "ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method synchronizes on an updated field",
+    "patternId": "ML_SYNC_ON_UPDATED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Mutable servlet field",
+    "patternId": "MSF_MUTABLE_SERVLET_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Mismatched notify()",
+    "patternId": "MWN_MISMATCHED_NOTIFY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Mismatched wait()",
+    "patternId": "MWN_MISMATCHED_WAIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Naked notify",
+    "patternId": "NN_NAKED_NOTIFY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronize and null check on the same field.",
+    "patternId": "NP_SYNC_AND_NULL_CHECK_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Using notify() rather than notifyAll()",
+    "patternId": "NO_NOTIFY_NOT_NOTIFYALL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class's readObject() method is synchronized",
+    "patternId": "RS_READOBJECT_SYNC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Return value of putIfAbsent ignored, value passed to putIfAbsent reused",
+    "patternId": "RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invokes run on a thread (did you mean to start it instead?)",
+    "patternId": "RU_INVOKE_RUN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Constructor invokes Thread.start()",
+    "patternId": "SC_START_IN_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method spins on field",
+    "patternId": "SP_SPIN_ON_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to static Calendar",
+    "patternId": "STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Call to static DateFormat",
+    "patternId": "STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Static Calendar field",
+    "patternId": "STCAL_STATIC_CALENDAR_INSTANCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Static DateFormat",
+    "patternId": "STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method calls Thread.sleep() with a lock held",
+    "patternId": "SWL_SLEEP_WITH_LOCK_HELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Wait with two locks held",
+    "patternId": "TLW_TWO_LOCK_WAIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unsynchronized get method, synchronized set method",
+    "patternId": "UG_SYNC_SET_UNSYNC_GET"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method does not release lock on all paths",
+    "patternId": "UL_UNRELEASED_LOCK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method does not release lock on all exception paths",
+    "patternId": "UL_UNRELEASED_LOCK_EXCEPTION_PATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unconditional wait",
+    "patternId": "UW_UNCOND_WAIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "An increment to a volatile field isn't atomic",
+    "patternId": "VO_VOLATILE_INCREMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A volatile reference to an array doesn't treat the array elements as volatile",
+    "patternId": "VO_VOLATILE_REFERENCE_TO_ARRAY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Synchronization on getClass rather than class literal",
+    "patternId": "WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class's writeObject() method is synchronized but nothing else is",
+    "patternId": "WS_WRITEOBJECT_SYNC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Condition.await() not in loop",
+    "patternId": "WA_AWAIT_NOT_IN_LOOP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Wait not in loop",
+    "patternId": "WA_NOT_IN_LOOP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Primitive value is boxed and then immediately unboxed",
+    "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Primitive value is boxed then unboxed to perform primitive coercion",
+    "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Primitive value is unboxed and coerced for ternary operator",
+    "patternId": "BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Boxed value is unboxed and then immediately reboxed",
+    "patternId": "BX_UNBOXING_IMMEDIATELY_REBOXED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Boxing a primitive to compare",
+    "patternId": "DM_BOXED_PRIMITIVE_FOR_COMPARE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Boxing/unboxing to parse a primitive",
+    "patternId": "DM_BOXED_PRIMITIVE_FOR_PARSING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method allocates a boxed primitive just to call toString",
+    "patternId": "DM_BOXED_PRIMITIVE_TOSTRING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes inefficient floating-point Number constructor; use static valueOf instead",
+    "patternId": "DM_FP_NUMBER_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes inefficient Number constructor; use static valueOf instead",
+    "patternId": "DM_NUMBER_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "The equals and hashCode methods of URL are blocking",
+    "patternId": "DMI_BLOCKING_METHODS_ON_URL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Maps and sets of URLs can be performance hogs",
+    "patternId": "DMI_COLLECTION_OF_URLS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes inefficient Boolean constructor; use Boolean.valueOf(...) instead",
+    "patternId": "DM_BOOLEAN_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Explicit garbage collection; extremely dubious except in benchmarking code",
+    "patternId": "DM_GC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method allocates an object, only to get the class object",
+    "patternId": "DM_NEW_FOR_GETCLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Use the nextInt method of Random rather than nextDouble to generate a random integer",
+    "patternId": "DM_NEXTINT_VIA_NEXTDOUBLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes inefficient new String(String) constructor",
+    "patternId": "DM_STRING_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes toString() method on a String",
+    "patternId": "DM_STRING_TOSTRING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method invokes inefficient new String() constructor",
+    "patternId": "DM_STRING_VOID_CTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Huge string constants is duplicated across multiple class files",
+    "patternId": "HSC_HUGE_SHARED_STRING_CONSTANT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method concatenates strings using + in a loop",
+    "patternId": "SBSC_USE_STRINGBUFFER_CONCATENATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Should be a static inner class",
+    "patternId": "SIC_INNER_SHOULD_BE_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Could be refactored into a named static inner class",
+    "patternId": "SIC_INNER_SHOULD_BE_STATIC_ANON"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Could be refactored into a static inner class",
+    "patternId": "SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unread field: should this field be static?",
+    "patternId": "SS_SHOULD_BE_STATIC"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method calls static Math class method on a constant value",
+    "patternId": "UM_UNNECESSARY_MATH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Private method is never called",
+    "patternId": "UPM_UNCALLED_PRIVATE_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unread field",
+    "patternId": "URF_UNREAD_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unused field",
+    "patternId": "UUF_UNUSED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Inefficient use of keySet iterator instead of entrySet iterator",
+    "patternId": "WMI_WRONG_MAP_ITERATOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Hardcoded constant database password",
+    "patternId": "DMI_CONSTANT_DB_PASSWORD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Empty database password",
+    "patternId": "DMI_EMPTY_DB_PASSWORD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "HTTP cookie formed from untrusted input",
+    "patternId": "HRS_REQUEST_PARAMETER_TO_COOKIE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "HTTP Response splitting vulnerability",
+    "patternId": "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Absolute path traversal in servlet",
+    "patternId": "PT_ABSOLUTE_PATH_TRAVERSAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Relative path traversal in servlet",
+    "patternId": "PT_RELATIVE_PATH_TRAVERSAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Nonconstant string passed to execute or addBatch method on an SQL statement",
+    "patternId": "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "A prepared statement is generated from a nonconstant String",
+    "patternId": "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "JSP reflected cross site scripting vulnerability",
+    "patternId": "XSS_REQUEST_PARAMETER_TO_JSP_WRITER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Servlet reflected cross site scripting vulnerability in error page",
+    "patternId": "XSS_REQUEST_PARAMETER_TO_SEND_ERROR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Servlet reflected cross site scripting vulnerability",
+    "patternId": "XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Questionable cast to abstract collection",
+    "patternId": "BC_BAD_CAST_TO_ABSTRACT_COLLECTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Questionable cast to concrete collection",
+    "patternId": "BC_BAD_CAST_TO_CONCRETE_COLLECTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unchecked/unconfirmed cast",
+    "patternId": "BC_UNCONFIRMED_CAST"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unchecked/unconfirmed cast of return value from method",
+    "patternId": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "instanceof will always return true",
+    "patternId": "BC_VACUOUS_INSTANCEOF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unsigned right shift cast to short/byte",
+    "patternId": "ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class is final but declares protected field",
+    "patternId": "CI_CONFUSED_INHERITANCE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method uses the same code for two branches",
+    "patternId": "DB_DUPLICATE_BRANCHES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method uses the same code for two switch clauses",
+    "patternId": "DB_DUPLICATE_SWITCH_CLAUSES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store to local variable",
+    "patternId": "DLS_DEAD_LOCAL_STORE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless assignment in return statement",
+    "patternId": "DLS_DEAD_LOCAL_STORE_IN_RETURN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store of null to local variable",
+    "patternId": "DLS_DEAD_LOCAL_STORE_OF_NULL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dead store to local variable that shadows field",
+    "patternId": "DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Code contains a hard coded reference to an absolute pathname",
+    "patternId": "DMI_HARDCODED_ABSOLUTE_FILENAME"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non serializable object written to ObjectOutput",
+    "patternId": "DMI_NONSERIALIZABLE_OBJECT_WRITTEN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Invocation of substring(0), which returns the original value",
+    "patternId": "DMI_USELESS_SUBSTRING"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Thread passed where Runnable expected",
+    "patternId": "DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class doesn't override equals in superclass",
+    "patternId": "EQ_DOESNT_OVERRIDE_EQUALS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unusual equals method",
+    "patternId": "EQ_UNUSUAL"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Test for floating point equality",
+    "patternId": "FE_FLOATING_POINT_EQUALITY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Non-Boolean argument formatted using %b format specifier",
+    "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_TO_BOOLEAN"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Potentially ambiguous invocation of either an inherited or outer method",
+    "patternId": "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Initialization circularity",
+    "patternId": "IC_INIT_CIRCULARITY"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Integral division result cast to double or float",
+    "patternId": "ICAST_IDIV_CAST_TO_DOUBLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Result of integer multiplication cast to long",
+    "patternId": "ICAST_INTEGER_MULTIPLY_CAST_TO_LONG"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Computation of average could overflow",
+    "patternId": "IM_AVERAGE_COMPUTATION_COULD_OVERFLOW"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Check for oddness that won't work for negative numbers",
+    "patternId": "IM_BAD_CHECK_FOR_ODD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Integer remainder modulo 1",
+    "patternId": "INT_BAD_REM_BY_1"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Vacuous bit mask operation on integer value",
+    "patternId": "INT_VACUOUS_BIT_OPERATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Vacuous comparison of integer value",
+    "patternId": "INT_VACUOUS_COMPARISON"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class extends Servlet class and uses instance variables",
+    "patternId": "MTIA_SUSPECT_SERVLET_INSTANCE_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class extends Struts Action class and uses instance variables",
+    "patternId": "MTIA_SUSPECT_STRUTS_INSTANCE_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Dereference of the result of readLine() without nullcheck",
+    "patternId": "NP_DEREFERENCE_OF_READLINE_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Immediate dereference of the result of readLine()",
+    "patternId": "NP_IMMEDIATE_DEREFERENCE_OF_READLINE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Load of known null value",
+    "patternId": "NP_LOAD_OF_KNOWN_NULL_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method tightens nullness annotation on parameter",
+    "patternId": "NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method relaxes nullness annotation on return value",
+    "patternId": "NP_METHOD_RETURN_RELAXING_ANNOTATION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible null pointer dereference due to return value of called method",
+    "patternId": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Possible null pointer dereference on branch that might be infeasible",
+    "patternId": "NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Parameter must be non-null but is marked as nullable",
+    "patternId": "NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Read of unwritten public or protected field",
+    "patternId": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Potentially dangerous use of non-short-circuit logic",
+    "patternId": "NS_DANGEROUS_NON_SHORT_CIRCUIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Questionable use of non-short-circuit logic",
+    "patternId": "NS_NON_SHORT_CIRCUIT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Consider returning a zero length array rather than null",
+    "patternId": "PZLA_PREFER_ZERO_LENGTH_ARRAYS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Complicated, subtle or wrong increment in for-loop",
+    "patternId": "QF_QUESTIONABLE_FOR_LOOP"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Redundant comparison of non-null value to null",
+    "patternId": "RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Redundant comparison of two null values",
+    "patternId": "RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Redundant nullcheck of value known to be non-null",
+    "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Redundant nullcheck of value known to be null",
+    "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Exception is caught when Exception is not thrown",
+    "patternId": "REC_CATCH_EXCEPTION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Class implements same interface as superclass",
+    "patternId": "RI_REDUNDANT_INTERFACES"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method checks to see if result of String.indexOf is positive",
+    "patternId": "RV_CHECK_FOR_POSITIVE_INDEXOF"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method discards result of readLine after checking if it is non-null",
+    "patternId": "RV_DONT_JUST_NULL_CHECK_READLINE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Remainder of hashCode could be negative",
+    "patternId": "RV_REM_OF_HASHCODE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Remainder of 32-bit signed random integer",
+    "patternId": "RV_REM_OF_RANDOM_INT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method ignores return value, is this OK?",
+    "patternId": "RV_RETURN_VALUE_IGNORED_INFERRED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Return value of method without side effect is ignored",
+    "patternId": "RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Double assignment of field",
+    "patternId": "SA_FIELD_DOUBLE_ASSIGNMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Double assignment of local variable",
+    "patternId": "SA_LOCAL_DOUBLE_ASSIGNMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Self assignment of local variable",
+    "patternId": "SA_LOCAL_SELF_ASSIGNMENT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Switch statement found where one case falls through to the next case",
+    "patternId": "SF_SWITCH_FALLTHROUGH"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Switch statement found where default case is missing",
+    "patternId": "SF_SWITCH_NO_DEFAULT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Write to static field from instance method",
+    "patternId": "ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Private readResolve method not inherited by subclasses",
+    "patternId": "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Transient field of class that isn't Serializable.",
+    "patternId": "SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value required to have type qualifier, but marked as unknown",
+    "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Value required to not have type qualifier, but marked as unknown",
+    "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Condition has no effect",
+    "patternId": "UC_USELESS_CONDITION"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Condition has no effect due to the variable type",
+    "patternId": "UC_USELESS_CONDITION_TYPE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless object created",
+    "patternId": "UC_USELESS_OBJECT"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless object created on stack",
+    "patternId": "UC_USELESS_OBJECT_STACK"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless non-empty void method",
+    "patternId": "UC_USELESS_VOID_METHOD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless control flow",
+    "patternId": "UCF_USELESS_CONTROL_FLOW"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Useless control flow to next line",
+    "patternId": "UCF_USELESS_CONTROL_FLOW_NEXT_LINE"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unread public/protected field",
+    "patternId": "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unused public or protected field",
+    "patternId": "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Field not initialized in constructor but dereferenced without null check",
+    "patternId": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Unwritten public or protected field",
+    "patternId": "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
+  },
+  {
+    "timeToFix": 30,
+    "description": "",
+    "title": "Method directly allocates a specific implementation of xml interfaces",
+    "patternId": "XFB_XML_FACTORY_BYPASS"
+  }
+]
