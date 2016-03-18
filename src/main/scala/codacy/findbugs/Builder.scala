@@ -69,7 +69,7 @@ object SBTBuilder extends Builder {
 object BuilderFactory {
 
   lazy val knownBuilders = Seq(
-    MavenBuilder,
+    MavenBuilder
     // FindBugs behaves funny when running over Scala code, returning
     // class names as seen in the tracebacks rather than proper files.
     // For now we just disable it.
