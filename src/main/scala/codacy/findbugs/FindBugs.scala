@@ -8,7 +8,7 @@ import codacy.dockerApi.utils.{CommandRunner, FileHelper, ToolHelper}
 
 import scala.util.{Failure, Success, Try}
 import scala.xml.{XML, Node}
-
+import codacy.dockerApi.traits._
 
 private class Occurence(val lineno: Integer, val path: String) {
   lazy val packageName = path.split(File.separatorChar).headOption.getOrElse("")
