@@ -4,7 +4,7 @@ name := """codacy-engine-findbugs"""
 
 version := "1.0"
 
-val languageVersion = "2.11.7"
+val languageVersion = "2.11.8"
 
 scalaVersion := languageVersion
 
@@ -14,9 +14,8 @@ resolvers ++= Seq(
 )
 
 libraryDependencies ++= Seq(
-  "com.typesafe.play" %% "play-json" % "2.3.10" withSources(),
   "org.scala-lang.modules" %% "scala-xml" % "1.0.5" withSources(),
-  "com.codacy" %% "codacy-engine-scala-seed" % "2.6.31"
+  "com.codacy" %% "codacy-engine-scala-seed" % "2.6.33"
 )
 
 enablePlugins(JavaAppPackaging)
@@ -25,16 +24,18 @@ enablePlugins(DockerPlugin)
 
 version in Docker := "1.0"
 
+val findBugsVersion = "3.0.1"
+
 val installAll =
-  """echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list &&
+  s"""echo "deb http://dl.bintray.com/sbt/debian /" | sudo tee -a /etc/apt/sources.list.d/sbt.list &&
      |sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823 &&
      |apt-get -y update &&
      |apt-get -y install maven &&
      |apt-get -y install sbt &&
-     |wget http://netix.dl.sourceforge.net/project/findbugs/findbugs/3.0.1/findbugs-3.0.1.tar.gz &&
+     |wget http://netix.dl.sourceforge.net/project/findbugs/findbugs/$findBugsVersion/findbugs-$findBugsVersion.tar.gz &&
      |mkdir /opt/docker/findbugs &&
-     |gzip -dc findbugs-3.0.1.tar.gz | tar -xf - -C /opt/docker/findbugs &&
-     |echo "java -jar /opt/docker/findbugs/findbugs-3.0.1/lib/findbugs.jar \$@" > /opt/docker/findbugs-cli.sh &&
+     |gzip -dc findbugs-$findBugsVersion.tar.gz | tar -xf - -C /opt/docker/findbugs &&
+     |echo "java -jar /opt/docker/findbugs/findbugs-$findBugsVersion/lib/findbugs.jar \\$$@" > /opt/docker/findbugs-cli.sh &&
      |chmod +x /opt/docker/findbugs-cli.sh""".stripMargin.replaceAll(System.lineSeparator(), " ")
 
 mappings in Universal <++= (resourceDirectory in Compile) map { (resourceDir: File) =>
