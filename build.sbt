@@ -35,7 +35,7 @@ val installAll =
      |wget http://netix.dl.sourceforge.net/project/findbugs/findbugs/$findBugsVersion/findbugs-$findBugsVersion.tar.gz &&
      |mkdir /opt/docker/findbugs &&
      |gzip -dc findbugs-$findBugsVersion.tar.gz | tar -xf - -C /opt/docker/findbugs &&
-     |echo "java -jar /opt/docker/findbugs/findbugs-$findBugsVersion/lib/findbugs.jar $$@" > /opt/docker/findbugs-cli.sh &&
+     |echo "java -jar /opt/docker/findbugs/findbugs-$findBugsVersion/lib/findbugs.jar \\$$@" > /opt/docker/findbugs-cli.sh &&
      |chmod +x /opt/docker/findbugs-cli.sh""".stripMargin.replaceAll(System.lineSeparator(), " ")
 
 mappings in Universal <++= (resourceDirectory in Compile) map { (resourceDir: File) =>
