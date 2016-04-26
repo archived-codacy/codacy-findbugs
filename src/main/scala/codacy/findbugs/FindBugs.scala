@@ -6,9 +6,9 @@ import java.nio.file.Path
 import codacy.dockerApi._
 import codacy.dockerApi.utils.{CommandRunner, FileHelper, ToolHelper}
 
-import scala.util.{Failure, Success, Try}
-import scala.xml.{XML, Node}
-
+import scala.util.{Failure, Properties, Success, Try}
+import scala.xml.{Node, XML}
+import codacy.dockerApi.traits._
 
 private class Occurence(val lineno: Integer, val path: String) {
   lazy val packageName = path.split(File.separatorChar).headOption.getOrElse("")
@@ -64,7 +64,11 @@ object FindBugs extends Tool {
     CommandRunner.exec(command) match {
       case Left(throwable) => Failure(throwable)
       case Right(output) if output.exitCode != 0 =>
-        Failure(new Exception("Can't execute tool."))
+        Failure(new Exception(
+          s"""Can't execute tool
+             |stdout: ${output.stdout.mkString(Properties.lineSeparator)}
+             |stderr: ${output.stderr.mkString(Properties.lineSeparator)}
+           """.stripMargin))
 
       case Right(_) =>
         Try {
