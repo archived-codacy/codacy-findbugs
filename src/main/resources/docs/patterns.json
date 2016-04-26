@@ -1,2125 +1,2125 @@
 {
-  "name": "FindBugs",
   "patterns": [
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_EQUALS_METHOD_SHOULD_WORK_FOR_ALL_OBJECTS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_SIGNED_CHECK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CN_IDIOM"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CN_IDIOM_NO_SUPER_CALL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CNT_ROUGH_CONSTANT_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CO_ABSTRACT_SELF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CO_COMPARETO_INCORRECT_FLOATING"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CO_COMPARETO_RESULTS_MIN_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CO_SELF_NO_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DE_MIGHT_DROP"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DE_MIGHT_IGNORE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_ENTRY_SETS_MAY_REUSE_ENTRY_OBJECTS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_RANDOM_USED_ONLY_ONCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_USING_REMOVEALL_TO_CLEAR_COLLECTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_EXIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_RUN_FINALIZERS_ON_EXIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ES_COMPARING_PARAMETER_STRING_WITH_EQ"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ES_COMPARING_STRINGS_WITH_EQ"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_ABSTRACT_SELF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_CHECK_FOR_OPERAND_NOT_COMPATIBLE_WITH_THIS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_COMPARETO_USE_OBJECT_EQUALS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_GETCLASS_AND_CLASS_CONSTANT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_SELF_NO_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_EMPTY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_EXPLICIT_INVOCATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_FINALIZER_NULLS_FIELDS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_FINALIZER_ONLY_NULLS_FIELDS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_MISSING_SUPER_CALL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_NULLIFY_SUPER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FI_USELESS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_USES_NEWLINE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "GC_UNCHECKED_TYPE_IN_GENERIC_CALL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_EQUALS_NO_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_EQUALS_USE_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_HASHCODE_NO_EQUALS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_HASHCODE_USE_OBJECT_EQUALS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_INHERITS_EQUALS_USE_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IC_SUPERCLASS_USES_SUBCLASS_DURING_INITIALIZATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IMSE_DONT_CATCH_IMSE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ISC_INSTANTIATE_STATIC_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IT_NO_SUCH_ELEMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "J2EE_STORE_OF_NON_SERIALIZABLE_OBJECT_INTO_SESSION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "JCIP_FIELD_ISNT_FINAL_IN_IMMUTABLE_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ME_ENUM_FIELD_SETTER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ME_MUTABLE_ENUM_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_BOOLEAN_RETURN_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_CLONE_COULD_RETURN_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_EQUALS_SHOULD_HANDLE_NULL_ARGUMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_TOSTRING_COULD_RETURN_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_CLASS_NAMING_CONVENTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_CLASS_NOT_EXCEPTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_CONFUSING"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_FIELD_NAMING_CONVENTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_FUTURE_KEYWORD_USED_AS_IDENTIFIER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_FUTURE_KEYWORD_USED_AS_MEMBER_IDENTIFIER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_METHOD_NAMING_CONVENTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_SAME_SIMPLE_NAME_AS_INTERFACE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_SAME_SIMPLE_NAME_AS_SUPERCLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_VERY_CONFUSING_INTENTIONAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_WRONG_PACKAGE_INTENTIONAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ODR_OPEN_DATABASE_RESOURCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ODR_OPEN_DATABASE_RESOURCE_EXCEPTION_PATH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "OS_OPEN_STREAM"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "OS_OPEN_STREAM_EXCEPTION_PATH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "PZ_DONT_REUSE_ENTRY_OBJECTS_IN_ITERATORS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RC_REF_COMPARISON_BAD_PRACTICE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RC_REF_COMPARISON_BAD_PRACTICE_BOOLEAN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RR_NOT_CHECKED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SR_NOT_CHECKED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_NEGATING_RESULT_OF_COMPARETO"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_RETURN_VALUE_IGNORED_BAD_PRACTICE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SI_INSTANCE_BEFORE_FINALS_ASSIGNED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SW_SWING_METHODS_INVOKED_IN_SWING_THREAD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_BAD_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_BAD_FIELD_INNER_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_BAD_FIELD_STORE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_COMPARATOR_SHOULD_BE_SERIALIZABLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_INNER_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NONFINAL_SERIALVERSIONID"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NONLONG_SERIALVERSIONID"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NONSTATIC_SERIALVERSIONID"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NO_SUITABLE_CONSTRUCTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NO_SUITABLE_CONSTRUCTOR_FOR_EXTERNALIZATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_READ_RESOLVE_MUST_RETURN_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_TRANSIENT_FIELD_NOT_RESTORED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_NO_SERIALVERSIONID"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UI_INHERITANCE_UNSAFE_GETRESOURCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_IMPOSSIBLE_CAST"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_IMPOSSIBLE_DOWNCAST"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_IMPOSSIBLE_DOWNCAST_OF_TOARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_IMPOSSIBLE_INSTANCEOF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_ADD_OF_SIGNED_BYTE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_AND"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_AND_ZZ"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_IOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_IOR_OF_SIGNED_BYTE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BIT_SIGNED_CHECK_HIGH_BIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BOA_BADLY_OVERRIDDEN_ADAPTER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BSHIFT_WRONG_ADD_PRIORITY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_BAD_SHIFT_AMOUNT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_LOCAL_INCREMENT_IN_RETURN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_STORE_OF_CLASS_LITERAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_OVERWRITTEN_INCREMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_ARGUMENTS_WRONG_ORDER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_BAD_MONTH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_BIGDECIMAL_CONSTRUCTED_FROM_DOUBLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_CALLING_NEXT_FROM_HASNEXT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_COLLECTIONS_SHOULD_NOT_CONTAIN_THEMSELVES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_DOH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_INVOKING_HASHCODE_ON_ARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_LONG_BITS_TO_DOUBLE_INVOKED_ON_INT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_VACUOUS_SELF_COLLECTION_CALL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_ANNOTATION_IS_NOT_VISIBLE_TO_REFLECTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_FUTILE_ATTEMPT_TO_CHANGE_MAXPOOL_SIZE_OF_SCHEDULED_THREAD_POOL_EXECUTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_SCHEDULED_THREAD_POOL_EXECUTOR_WITH_ZERO_CORE_THREADS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_VACUOUS_CALL_TO_EASYMOCK_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_INVALID_MIN_MAX"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_ARRAY_AND_NONARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_BAD_ARRAY_COMPARE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_INCOMPATIBLE_ARRAY_COMPARE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_NULL_ARG"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_UNRELATED_CLASS_AND_INTERFACE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_UNRELATED_INTERFACES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_UNRELATED_TYPES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EC_UNRELATED_TYPES_USING_POINTER_EQUALITY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_ALWAYS_FALSE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_ALWAYS_TRUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_COMPARING_CLASS_NAMES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_DONT_DEFINE_EQUALS_FOR_ENUM"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_OTHER_NO_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_OTHER_USE_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_OVERRIDING_EQUALS_NOT_SYMMETRIC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_SELF_USE_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FE_TEST_IF_EQUAL_TO_NOT_A_NUMBER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_BAD_ARGUMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_BAD_CONVERSION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_EXPECTED_MESSAGE_FORMAT_SUPPLIED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_EXTRA_ARGUMENTS_PASSED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_ILLEGAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_MISSING_ARGUMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_NO_PREVIOUS_ARGUMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "GC_UNRELATED_TYPES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_SIGNATURE_DECLARES_HASHING_OF_UNHASHABLE_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "HE_USE_OF_UNHASHABLE_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_INT_2_LONG_AS_INSTANT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_INT_CAST_TO_DOUBLE_PASSED_TO_CEIL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_INT_CAST_TO_FLOAT_PASSED_TO_ROUND"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_ASSERT_METHOD_INVOKED_FROM_RUN_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_BAD_SUITE_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_NO_TESTS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_SETUP_NO_SUPER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_SUITE_NOT_STATIC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IJU_TEARDOWN_NO_SUPER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IL_CONTAINER_ADDED_TO_ITSELF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IL_INFINITE_LOOP"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IL_INFINITE_RECURSIVE_LOOP"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IM_MULTIPLYING_RESULT_OF_IREM"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_BAD_COMPARISON_WITH_INT_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_BAD_COMPARISON_WITH_NONNEGATIVE_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_BAD_COMPARISON_WITH_SIGNED_BYTE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IO_APPENDING_TO_OBJECT_OUTPUT_STREAM"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IP_PARAMETER_IS_DEAD_BUT_OVERWRITTEN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MF_CLASS_MASKS_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MF_METHOD_MASKS_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_ALWAYS_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_ALWAYS_NULL_EXCEPTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_ARGUMENT_MIGHT_BE_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_CLOSING_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_GUARANTEED_DEREF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_GUARANTEED_DEREF_ON_EXCEPTION_PATH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NONNULL_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NONNULL_PARAM_VIOLATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NONNULL_RETURN_VIOLATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_INSTANCEOF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_ON_SOME_PATH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_ON_SOME_PATH_EXCEPTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_PARAM_DEREF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_PARAM_DEREF_ALL_TARGETS_DANGEROUS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_PARAM_DEREF_NONVIRTUAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_OPTIONAL_RETURN_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_STORE_INTO_NONNULL_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_UNWRITTEN_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_BAD_EQUAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_LCASE_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_LCASE_TOSTRING"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_METHOD_CONSTRUCTOR_CONFUSION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_VERY_CONFUSING"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NM_WRONG_PACKAGE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "QBA_QUESTIONABLE_BOOLEAN_ASSIGNMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RANGE_ARRAY_INDEX"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RANGE_ARRAY_LENGTH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RANGE_ARRAY_OFFSET"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RANGE_STRING_INDEX"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RC_REF_COMPARISON"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RCN_REDUNDANT_NULLCHECK_WOULD_HAVE_BEEN_A_NPE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RE_BAD_SYNTAX_FOR_REGULAR_EXPRESSION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RE_CANT_USE_FILE_SEPARATOR_AS_REGULAR_EXPRESSION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RE_POSSIBLE_UNINTENDED_PATTERN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_01_TO_INT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_ABSOLUTE_VALUE_OF_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_ABSOLUTE_VALUE_OF_RANDOM_INT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_CHECK_COMPARETO_FOR_SPECIFIC_RETURN_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_EXCEPTION_NOT_THROWN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_RETURN_VALUE_IGNORED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RpC_REPEATED_CONDITIONAL_TEST"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_FIELD_SELF_ASSIGNMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_FIELD_SELF_COMPARISON"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_FIELD_SELF_COMPUTATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_LOCAL_SELF_ASSIGNMENT_INSTEAD_OF_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_LOCAL_SELF_COMPARISON"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_LOCAL_SELF_COMPUTATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SF_DEAD_STORE_DUE_TO_SWITCH_FALLTHROUGH_TO_THROW"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SIC_THREADLOCAL_DEADLY_EMBRACE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SIO_SUPERFLUOUS_INSTANCEOF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SQL_BAD_PREPARED_STATEMENT_ACCESS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SQL_BAD_RESULTSET_ACCESS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STI_INTERRUPTED_ON_CURRENTTHREAD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STI_INTERRUPTED_ON_UNKNOWNTHREAD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_METHOD_MUST_BE_PRIVATE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_READ_RESOLVE_IS_STATIC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_ALWAYS_VALUE_USED_WHERE_NEVER_REQUIRED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_COMPARING_VALUES_WITH_INCOMPATIBLE_TYPE_QUALIFIERS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_ALWAYS_SINK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_MAYBE_SOURCE_VALUE_REACHES_NEVER_SINK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_NEVER_VALUE_USED_WHERE_ALWAYS_REQUIRED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_UNKNOWN_VALUE_USED_WHERE_ALWAYS_STRICTLY_REQUIRED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UMAC_UNCALLABLE_METHOD_OF_ANONYMOUS_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UR_UNINIT_READ"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UR_UNINIT_READ_CALLED_FROM_SUPER_CONSTRUCTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_INVOKING_TOSTRING_ON_ANONYMOUS_ARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_INVOKING_TOSTRING_ON_ARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_FROM_ARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UWF_NULL_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UWF_UNWRITTEN_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_PRIMITIVE_ARRAY_PASSED_TO_OBJECT_VARARG"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "LG_LOST_LOGGER_DUE_TO_WEAK_REFERENCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "OBL_UNSATISFIED_OBLIGATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "OBL_UNSATISFIED_OBLIGATION_EXCEPTION_EDGE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_CONVERT_CASE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_DEFAULT_ENCODING"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "DP_CREATE_CLASSLOADER_INSIDE_DO_PRIVILEGED"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "DP_DO_INSIDE_DO_PRIVILEGED"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "EI_EXPOSE_REP"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "EI_EXPOSE_REP2"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "FI_PUBLIC_SHOULD_BE_PROTECTED"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "EI_EXPOSE_STATIC_REP2"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_CANNOT_BE_FINAL"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_EXPOSE_REP"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_FINAL_PKGPROTECT"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_MUTABLE_ARRAY"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_MUTABLE_COLLECTION"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_MUTABLE_COLLECTION_PKGPROTECT"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_MUTABLE_HASHTABLE"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_OOI_PKGPROTECT"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_PKGPROTECT"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_SHOULD_BE_FINAL"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "MS_SHOULD_BE_REFACTORED_TO_BE_FINAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "AT_OPERATION_SEQUENCE_ON_CONCURRENT_ABSTRACTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DC_DOUBLECHECK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DC_PARTIALLY_CONSTRUCTED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DL_SYNCHRONIZATION_ON_BOOLEAN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DL_SYNCHRONIZATION_ON_BOXED_PRIMITIVE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DL_SYNCHRONIZATION_ON_SHARED_CONSTANT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DL_SYNCHRONIZATION_ON_UNSHARED_BOXED_PRIMITIVE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_MONITOR_WAIT_ON_CONDITION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DM_USELESS_THREAD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ESync_EMPTY_SYNC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IS2_INCONSISTENT_SYNC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IS_FIELD_NOT_GUARDED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "JLM_JSR166_LOCK_MONITORENTER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "JLM_JSR166_UTILCONCURRENT_MONITORENTER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "JML_JSR166_CALLING_WAIT_RATHER_THAN_AWAIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "LI_LAZY_INIT_STATIC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "LI_LAZY_INIT_UPDATE_STATIC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ML_SYNC_ON_FIELD_TO_GUARD_CHANGING_THAT_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ML_SYNC_ON_UPDATED_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MSF_MUTABLE_SERVLET_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MWN_MISMATCHED_NOTIFY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MWN_MISMATCHED_WAIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NN_NAKED_NOTIFY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_SYNC_AND_NULL_CHECK_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NO_NOTIFY_NOT_NOTIFYALL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RS_READOBJECT_SYNC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_RETURN_VALUE_OF_PUTIFABSENT_IGNORED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RU_INVOKE_RUN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SC_START_IN_CTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SP_SPIN_ON_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STCAL_INVOKE_ON_STATIC_CALENDAR_INSTANCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STCAL_INVOKE_ON_STATIC_DATE_FORMAT_INSTANCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STCAL_STATIC_CALENDAR_INSTANCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "STCAL_STATIC_SIMPLE_DATE_FORMAT_INSTANCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SWL_SLEEP_WITH_LOCK_HELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TLW_TWO_LOCK_WAIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UG_SYNC_SET_UNSYNC_GET"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UL_UNRELEASED_LOCK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UL_UNRELEASED_LOCK_EXCEPTION_PATH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UW_UNCOND_WAIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VO_VOLATILE_INCREMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VO_VOLATILE_REFERENCE_TO_ARRAY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "WL_USING_GETCLASS_RATHER_THAN_CLASS_LITERAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "WS_WRITEOBJECT_SYNC"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "WA_AWAIT_NOT_IN_LOOP"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "WA_NOT_IN_LOOP"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "BX_BOXING_IMMEDIATELY_UNBOXED_TO_PERFORM_COERCION"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "BX_UNBOXED_AND_COERCED_FOR_TERNARY_OPERATOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "BX_UNBOXING_IMMEDIATELY_REBOXED"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_BOXED_PRIMITIVE_FOR_COMPARE"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_BOXED_PRIMITIVE_FOR_PARSING"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_BOXED_PRIMITIVE_TOSTRING"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_FP_NUMBER_CTOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_NUMBER_CTOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DMI_BLOCKING_METHODS_ON_URL"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DMI_COLLECTION_OF_URLS"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_BOOLEAN_CTOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_GC"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_NEW_FOR_GETCLASS"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_NEXTINT_VIA_NEXTDOUBLE"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_STRING_CTOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_STRING_TOSTRING"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "DM_STRING_VOID_CTOR"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "HSC_HUGE_SHARED_STRING_CONSTANT"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "SBSC_USE_STRINGBUFFER_CONCATENATION"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "SIC_INNER_SHOULD_BE_STATIC"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "SIC_INNER_SHOULD_BE_STATIC_ANON"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "SIC_INNER_SHOULD_BE_STATIC_NEEDS_THIS"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "SS_SHOULD_BE_STATIC"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "UM_UNNECESSARY_MATH"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "UPM_UNCALLED_PRIVATE_METHOD"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "URF_UNREAD_FIELD"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "UUF_UNUSED_FIELD"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "Performance",
+      "level": "Warning",
       "patternId": "WMI_WRONG_MAP_ITERATOR"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "DMI_CONSTANT_DB_PASSWORD"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "DMI_EMPTY_DB_PASSWORD"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "HRS_REQUEST_PARAMETER_TO_COOKIE"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "HRS_REQUEST_PARAMETER_TO_HTTP_HEADER"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "PT_ABSOLUTE_PATH_TRAVERSAL"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "PT_RELATIVE_PATH_TRAVERSAL"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "SQL_NONCONSTANT_STRING_PASSED_TO_EXECUTE"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "SQL_PREPARED_STATEMENT_GENERATED_FROM_NONCONSTANT_STRING"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "XSS_REQUEST_PARAMETER_TO_JSP_WRITER"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "XSS_REQUEST_PARAMETER_TO_SEND_ERROR"
     },
     {
-      "level": "Error",
       "category": "Security",
+      "level": "Error",
       "patternId": "XSS_REQUEST_PARAMETER_TO_SERVLET_WRITER"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_BAD_CAST_TO_ABSTRACT_COLLECTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_BAD_CAST_TO_CONCRETE_COLLECTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_UNCONFIRMED_CAST"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_UNCONFIRMED_CAST_OF_RETURN_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "BC_VACUOUS_INSTANCEOF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_QUESTIONABLE_UNSIGNED_RIGHT_SHIFT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "CI_CONFUSED_INHERITANCE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DB_DUPLICATE_BRANCHES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DB_DUPLICATE_SWITCH_CLAUSES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_LOCAL_STORE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_LOCAL_STORE_IN_RETURN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_LOCAL_STORE_OF_NULL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DLS_DEAD_LOCAL_STORE_SHADOWS_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_HARDCODED_ABSOLUTE_FILENAME"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_NONSERIALIZABLE_OBJECT_WRITTEN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_USELESS_SUBSTRING"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "DMI_THREAD_PASSED_WHERE_RUNNABLE_EXPECTED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_DOESNT_OVERRIDE_EQUALS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "EQ_UNUSUAL"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "FE_FLOATING_POINT_EQUALITY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "VA_FORMAT_STRING_BAD_CONVERSION_TO_BOOLEAN"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IA_AMBIGUOUS_INVOCATION_OF_INHERITED_OR_OUTER_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IC_INIT_CIRCULARITY"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_IDIV_CAST_TO_DOUBLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ICAST_INTEGER_MULTIPLY_CAST_TO_LONG"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IM_AVERAGE_COMPUTATION_COULD_OVERFLOW"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "IM_BAD_CHECK_FOR_ODD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_BAD_REM_BY_1"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_VACUOUS_BIT_OPERATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "INT_VACUOUS_COMPARISON"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MTIA_SUSPECT_SERVLET_INSTANCE_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "MTIA_SUSPECT_STRUTS_INSTANCE_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_DEREFERENCE_OF_READLINE_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_IMMEDIATE_DEREFERENCE_OF_READLINE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_LOAD_OF_KNOWN_NULL_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_METHOD_PARAMETER_TIGHTENS_ANNOTATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_METHOD_RETURN_RELAXING_ANNOTATION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_ON_SOME_PATH_FROM_RETURN_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_NULL_ON_SOME_PATH_MIGHT_BE_INFEASIBLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_PARAMETER_MUST_BE_NONNULL_BUT_MARKED_AS_NULLABLE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NP_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NS_DANGEROUS_NON_SHORT_CIRCUIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "NS_NON_SHORT_CIRCUIT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "PZLA_PREFER_ZERO_LENGTH_ARRAYS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "QF_QUESTIONABLE_FOR_LOOP"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RCN_REDUNDANT_COMPARISON_OF_NULL_AND_NONNULL_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RCN_REDUNDANT_COMPARISON_TWO_NULL_VALUES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NONNULL_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RCN_REDUNDANT_NULLCHECK_OF_NULL_VALUE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "REC_CATCH_EXCEPTION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RI_REDUNDANT_INTERFACES"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_CHECK_FOR_POSITIVE_INDEXOF"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_DONT_JUST_NULL_CHECK_READLINE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_REM_OF_HASHCODE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_REM_OF_RANDOM_INT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_RETURN_VALUE_IGNORED_INFERRED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_FIELD_DOUBLE_ASSIGNMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_LOCAL_DOUBLE_ASSIGNMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SA_LOCAL_SELF_ASSIGNMENT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SF_SWITCH_FALLTHROUGH"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SF_SWITCH_NO_DEFAULT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_PRIVATE_READ_RESOLVE_NOT_INHERITED"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_ALWAYS_SINK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "TQ_EXPLICIT_UNKNOWN_SOURCE_VALUE_REACHES_NEVER_SINK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UC_USELESS_CONDITION"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UC_USELESS_CONDITION_TYPE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UC_USELESS_OBJECT"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UC_USELESS_OBJECT_STACK"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UC_USELESS_VOID_METHOD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UCF_USELESS_CONTROL_FLOW"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UCF_USELESS_CONTROL_FLOW_NEXT_LINE"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "URF_UNREAD_PUBLIC_OR_PROTECTED_FIELD"
     },
     {
-      "level": "Error",
-      "category": "Security",
+      "category": "UnusedCode",
+      "level": "Warning",
       "patternId": "UUF_UNUSED_PUBLIC_OR_PROTECTED_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UWF_FIELD_NOT_INITIALIZED_IN_CONSTRUCTOR"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "UWF_UNWRITTEN_PUBLIC_OR_PROTECTED_FIELD"
     },
     {
+      "category": "ErrorProne",
       "level": "Error",
-      "category": "Security",
       "patternId": "XFB_XML_FACTORY_BYPASS"
     }
-  ]
+  ],
+  "name": "FindBugs"
 }
