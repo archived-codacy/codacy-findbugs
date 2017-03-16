@@ -39,16 +39,24 @@ object FindBugs extends Tool {
     }
   }
 
-  private lazy val configFilenames = Set("findbugs.xml")
+  private lazy val configFilenames = Set("findbugs.xml", "findbugs-includes.xml")
+  private lazy val excludeFilenames = Set("findbugs-excludes.xml")
+
   private lazy val defaultCmd = List("/bin/bash", "findbugs-cli.sh", "-xml:withMessages", "-output", "/tmp/output.xml")
 
-  private[this] def toolCommand(path: Path, conf: Option[List[PatternDef]], builder: Builder) = {
+  private[this] def toolCommand(path: Path, conf: Option[List[PatternDef]], builder: Builder): (List[String], Array[File]) = {
 
-    lazy val nativeConf = configFilenames.map(cfgFile => Try(new better.files.File(path) / cfgFile))
-      .collectFirst { case Success(file) if file.isRegularFile => file.toJava.getAbsolutePath }
+    def findFile(alternatives: Set[String]): Option[String] = {
+      alternatives.map(cfgFile => Try(new better.files.File(path) / cfgFile))
+        .collectFirst { case Success(file) if file.isRegularFile => file.toJava.getAbsolutePath }
+    }
 
-    val rulesParams = conf.map(patternIncludeXML).orElse(nativeConf)
-      .map(rules => List("-include", rules)).getOrElse(List.empty)
+    lazy val nativeConf = findFile(configFilenames)
+    lazy val excludeFile = findFile(excludeFilenames)
+
+    val rulesParams = conf.map(patternIncludeXML).map(rules => List("-include", rules)).getOrElse {
+      (nativeConf.map(List("-include", _)) ++ excludeFile.map(List("-exclude", _))).flatten
+    }
 
     val sourceDirs = collectTargets(path, builder)
     val targetDirs = sourceDirs.flatMap(builder.targetOfDirectory).toSeq
