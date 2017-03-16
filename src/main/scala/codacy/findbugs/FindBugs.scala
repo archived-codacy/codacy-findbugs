@@ -1,14 +1,12 @@
 package codacy.findbugs
 
+import codacy.dockerApi._
+import codacy.dockerApi.traits._
+import codacy.dockerApi.utils.{CommandRunner, FileHelper, ToolHelper}
 import java.io.File
 import java.nio.file.Path
-
-import codacy.dockerApi._
-import codacy.dockerApi.utils.{CommandRunner, FileHelper, ToolHelper}
-
 import scala.util.{Failure, Properties, Success, Try}
 import scala.xml.{Node, XML}
-import codacy.dockerApi.traits._
 
 private class Occurence(val lineno: Integer, val path: String) {
   lazy val packageName = path.split(File.separatorChar).headOption.getOrElse("")
@@ -34,23 +32,31 @@ object FindBugs extends Tool {
       case Some(builder) =>
         val completeConf = ToolHelper.getPatternsToLint(conf)
         builder.build(path) match {
-          case Success(value) => processTool(path, completeConf, files, builder)
+          case Success(_) => processTool(path, completeConf, files, builder)
           case Failure(throwable) => Failure(throwable)
         }
       case _ => Failure(new Exception("Could not support project compilation."))
     }
   }
 
-  private lazy val configFilenames = Set("findbugs.xml")
+  private lazy val configFilenames = Set("findbugs.xml", "findbugs-includes.xml")
+  private lazy val excludeFilenames = Set("findbugs-excludes.xml")
+
   private lazy val defaultCmd = List("/bin/bash", "findbugs-cli.sh", "-xml:withMessages", "-output", "/tmp/output.xml")
 
-  private[this] def toolCommand(path: Path, conf: Option[List[PatternDef]], builder: Builder) = {
+  private[this] def toolCommand(path: Path, conf: Option[List[PatternDef]], builder: Builder): (List[String], Array[File]) = {
 
-    lazy val nativeConf = configFilenames.map( cfgFile => Try(new better.files.File(path) / cfgFile))
-        .collectFirst{ case Success(file) if file.isRegularFile => file.toJava.getAbsolutePath }
+    def findFile(alternatives: Set[String]): Option[String] = {
+      alternatives.map(cfgFile => Try(new better.files.File(path) / cfgFile))
+        .collectFirst { case Success(file) if file.isRegularFile => file.toJava.getAbsolutePath }
+    }
 
-    val rulesParams = conf.map( patternIncludeXML ).orElse( nativeConf )
-      .map( rules => List("-include", rules) ).getOrElse(List.empty)
+    lazy val nativeConf = findFile(configFilenames)
+    lazy val excludeFile = findFile(excludeFilenames)
+
+    val rulesParams = conf.map(patternIncludeXML).map(rules => List("-include", rules)).getOrElse {
+      (nativeConf.map(List("-include", _)) ++ excludeFile.map(List("-exclude", _))).flatten
+    }
 
     val sourceDirs = collectTargets(path, builder)
     val targetDirs = sourceDirs.flatMap(builder.targetOfDirectory).toSeq
@@ -82,7 +88,7 @@ object FindBugs extends Tool {
 
   private[this] def elementPathAndLine(elem: Node): Option[Seq[Occurence]] = {
     for {
-      start      <- elem.attribute("start")
+      start <- elem.attribute("start")
       sourcepath <- elem.attribute("sourcepath")
     } yield {
       (start zip sourcepath).map { case (startNode, sourcePathNode) =>
@@ -95,34 +101,34 @@ object FindBugs extends Tool {
     Seq(directory.absoluteStringPath, bug.occurence.path).mkString(File.separator)
   }
 
-  private[this] def isFileEnabled(path: String, files: Option[Set[Path]]): Boolean = {
-    files.fold(true) { case files => files.exists(_.toAbsolutePath.toFile.getAbsolutePath == path) }
+  private[this] def isFileEnabled(path: String, filesOpt: Option[Set[Path]]): Boolean = {
+    filesOpt.fold(true) { files => files.exists(_.toAbsolutePath.toFile.getAbsolutePath == path) }
   }
 
   private[this] def resultsFromBugInstances(bugs: Seq[BugInstance],
                                             sourceDirs: Array[File],
                                             files: Option[Set[Path]],
                                             builder: Builder): Seq[Result] = {
-    val sourceDirectories = sourceDirs.map { case dir =>
+    val sourceDirectories = sourceDirs.map { dir =>
       val components = Seq(dir.getAbsolutePath) ++ builder.pathComponents
       val dirPath = components.mkString(File.separator)
       new SourceDirectory(new File(dirPath))
     }
 
-    bugs.flatMap { case bug =>
+    bugs.flatMap { bug =>
       val foundOriginDirectories = sourceDirectories.filter(_.subdirectoryExists(bug.occurence.components))
 
       val results: Seq[Result] = foundOriginDirectories.collect {
-        case directory if foundOriginDirectories.size == 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
+        case directory if foundOriginDirectories.length == 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
           val filename = sourceFileName(directory, bug)
           Issue(SourcePath(filename),
-                ResultMessage(bug.message),
-                PatternId(bug.name),
-                ResultLine(bug.occurence.lineno))
-        case directory if foundOriginDirectories.size > 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
+            ResultMessage(bug.message),
+            PatternId(bug.name),
+            ResultLine(bug.occurence.lineno))
+        case directory if foundOriginDirectories.length > 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
           val filename = sourceFileName(directory, bug)
           FileError(SourcePath(filename),
-                    Option(ErrorMessage("File duplicated in multiple directories.")))
+            Option(ErrorMessage("File duplicated in multiple directories.")))
 
       }
       results
@@ -132,7 +138,7 @@ object FindBugs extends Tool {
   private[this] def parseOutputFile(): Seq[BugInstance] = {
     val xmlOutput = XML.loadFile("/tmp/output.xml")
     val bugInstances = xmlOutput \ "BugInstance"
-    bugInstances.flatMap { case bugInstance =>
+    bugInstances.flatMap { bugInstance =>
       // If the there is a SourceLine under the BugInstance, then that is
       // the line that will reported. The only issue though is only the first
       // occurence is emitted, even though there can be many more, that's why we're
@@ -140,27 +146,27 @@ object FindBugs extends Tool {
       val sourceLineOccurences = bugInstance \ "SourceLine"
       val patternName = bugInstance \@ "type"
       val message = (bugInstance \ "LongMessage").head.text
-      val occurences = (sourceLineOccurences.nonEmpty match {
-        case true => elementPathAndLine(sourceLineOccurences.head)
-        case false =>
-          val methodSourceLine = bugInstance \ "Method"
-          methodSourceLine.nonEmpty match {
-            case true => elementPathAndLine(methodSourceLine.head)
-            case false => Option.empty
-          }
+      val occurences = (if (sourceLineOccurences.nonEmpty) {
+        elementPathAndLine(sourceLineOccurences.head)
+      } else {
+        val methodSourceLine = bugInstance \ "Method"
+        if (methodSourceLine.nonEmpty) {
+          elementPathAndLine(methodSourceLine.head)
+        } else {
+          Option.empty
+        }
       }) getOrElse Seq()
       occurences.map(new BugInstance(patternName, message, _))
     }
   }
 
   private[this] def patternIncludeXML(conf: List[PatternDef]): String = {
-    val xmlLiteral = <FindBugsFilter>{
-      conf.map( pattern =>
+    val xmlLiteral = <FindBugsFilter>
+      {conf.map(pattern =>
         <Match>
           <Bug pattern={pattern.patternId.value}/>
         </Match>
-      )
-    }
+      )}
     </FindBugsFilter>.toString
     val tmp = FileHelper.createTmpFile(xmlLiteral, "findbugs", "")
     tmp.toAbsolutePath.toString
@@ -169,12 +175,7 @@ object FindBugs extends Tool {
   private[this] def collectTargets(path: Path, builder: Builder): Array[File] = {
     // Get the directories that can be projects (including subprojects and the current directory).
     val directories = path.toFile.listFiles.filter(_.isDirectory) ++ Seq(path.toFile)
-    directories.filter {
-      case directory =>
-        builder.targetOfDirectory(directory).fold(false) {
-          case target => new File(target).exists
-        }
-
-    }
+    directories.filter(directory =>
+      builder.targetOfDirectory(directory).fold(false)(target => new File(target).exists))
   }
 }
