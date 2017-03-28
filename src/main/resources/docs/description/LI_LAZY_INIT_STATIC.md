@@ -1,0 +1,1 @@
+This method contains an unsynchronized lazy initialization of a non-volatile static field. Because the compiler or processor may reorder instructions, threads are not guaranteed to see a completely initialized object, if the method can be called by multiple threads. You can make the field volatile to correct the problem. For more information, see the Java Memory Model web site.

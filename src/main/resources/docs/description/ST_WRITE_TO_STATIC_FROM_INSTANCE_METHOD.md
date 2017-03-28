@@ -1,0 +1,1 @@
+This instance method writes to a static field. This is tricky to get correct if multiple instances are being manipulated, and generally bad practice.

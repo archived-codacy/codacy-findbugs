@@ -1,0 +1,1 @@
+Class is a JUnit TestCase and implements the setUp method. The setUp method should call super.setUp(), but doesn't.

@@ -1,0 +1,1 @@
+This class defines a covariant version of the equals() method, but inherits the normal equals(Object) method defined in the base java.lang.Object class.  The class should probably define a boolean equals(Object) method.

@@ -1,0 +1,1 @@
+The format string is syntactically invalid, and a runtime exception will occur when this statement is executed.

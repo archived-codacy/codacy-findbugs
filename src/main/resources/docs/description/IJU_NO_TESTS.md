@@ -1,0 +1,1 @@
+Class is a JUnit TestCase but has not implemented any test methods

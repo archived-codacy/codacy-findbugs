@@ -1,0 +1,1 @@
+The usage of Optional return type (java.util.Optional or com.google.common.base.Optiona) always mean that explicit null returns were not desired by design. Returning a null value in such case is a contract violation and will most likely break clients code.

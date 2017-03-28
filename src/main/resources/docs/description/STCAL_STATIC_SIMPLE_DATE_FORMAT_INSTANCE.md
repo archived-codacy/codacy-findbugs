@@ -1,0 +1,1 @@
+As the JavaDoc states, DateFormats are inherently unsafe for multithreaded use. Sharing a single instance across thread boundaries without proper synchronization will result in erratic behavior of the application.You may also experience serialization problems.Using an instance field is recommended.For more information on this see Sun Bug #6231579 and Sun Bug #6178997.

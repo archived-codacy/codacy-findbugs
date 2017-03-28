@@ -1,0 +1,1 @@
+In order for the readResolve method to be recognized by the serialization mechanism, it must not be declared as a static method.

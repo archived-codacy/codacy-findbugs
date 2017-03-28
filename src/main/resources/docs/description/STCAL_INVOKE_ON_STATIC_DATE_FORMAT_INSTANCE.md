@@ -1,0 +1,1 @@
+As the JavaDoc states, DateFormats are inherently unsafe for multithreaded use. The detector has found a call to an instance of DateFormat that has been obtained via a static field. This looks suspicous.For more information on this see Sun Bug #6231579 and Sun Bug #6178997.

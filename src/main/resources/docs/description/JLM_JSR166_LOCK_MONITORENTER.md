@@ -1,0 +1,1 @@
+This method performs synchronization an object that implements java.util.concurrent.locks.Lock. Such an object is locked/unlocked using acquire()/release() rather than using the synchronized (...) construct.

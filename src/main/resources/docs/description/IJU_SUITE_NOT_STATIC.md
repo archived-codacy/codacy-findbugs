@@ -1,0 +1,1 @@
+Class is a JUnit TestCase and implements the suite() method. The suite method should be declared as being static, but isn't.

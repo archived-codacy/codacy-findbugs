@@ -1,0 +1,1 @@
+This field is annotated with net.jcip.annotations.GuardedBy or javax.annotation.concurrent.GuardedBy, but can be accessed in a way that seems to violate those annotations.

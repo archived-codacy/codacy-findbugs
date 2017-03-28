@@ -1,0 +1,1 @@
+This class has a writeObject() method which is synchronized; however, no other method of the class is synchronized.

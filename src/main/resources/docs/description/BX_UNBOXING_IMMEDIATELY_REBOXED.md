@@ -1,0 +1,1 @@
+A boxed value is unboxed and then immediately reboxed.

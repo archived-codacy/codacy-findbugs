@@ -1,0 +1,1 @@
+This call to a generic collection's method would only make sense if a collection contained itself (e.g., if s.contains(s) were true). This is unlikely to be true and would cause problems if it were true (such as the computation of the hash code resulting in infinite recursion). It is likely that the wrong value is being passed as a parameter.

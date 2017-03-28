@@ -1,0 +1,1 @@
+Never call System.runFinalizersOnExit or Runtime.runFinalizersOnExit for any reason: they are among the most dangerous methods in the Java libraries. -- Joshua Bloch

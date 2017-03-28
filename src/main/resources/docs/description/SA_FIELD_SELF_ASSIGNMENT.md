@@ -1,0 +1,1 @@
+This method contains a self assignment of a field; e.g.  int x; public void foo() { x = x; } Such assignments are useless, and may indicate a logic error or typo.

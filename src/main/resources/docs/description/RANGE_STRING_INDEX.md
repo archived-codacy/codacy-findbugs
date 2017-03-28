@@ -1,0 +1,1 @@
+String method is called and specified string index is out of bounds. This will result in StringIndexOutOfBoundsException at runtime.

@@ -1,0 +1,1 @@
+In order for the readResolve method to be recognized by the serialization mechanism, it must be declared to have a return type of Object.

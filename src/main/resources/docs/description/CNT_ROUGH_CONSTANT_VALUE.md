@@ -1,0 +1,1 @@
+It's recommended to use the predefined library constant for code clarity and better precision.

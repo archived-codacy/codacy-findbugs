@@ -1,0 +1,1 @@
+Type check performed using the instanceof operator where it can be statically determined whether the object is of the type requested.

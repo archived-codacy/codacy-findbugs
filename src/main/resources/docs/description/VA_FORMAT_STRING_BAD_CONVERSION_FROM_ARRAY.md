@@ -1,0 +1,1 @@
+One of the arguments being formatted with a format string is an array. This will be formatted using a fairly useless format, such as [I@304282, which doesn't actually show the contents of the array. Consider wrapping the array using Arrays.asList(...) before handling it off to a formatted.

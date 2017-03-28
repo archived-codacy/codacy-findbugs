@@ -1,0 +1,1 @@
+This is an integer bit operation (and, or, or exclusive or) that doesn't do any useful work (e.g., v & 0xffffffff).

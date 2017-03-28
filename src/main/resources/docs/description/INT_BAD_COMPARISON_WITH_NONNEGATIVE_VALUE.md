@@ -1,0 +1,1 @@
+This code compares a value that is guaranteed to be non-negative with a negative constant or zero.

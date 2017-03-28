@@ -1,0 +1,1 @@
+This class defines a hashCode() method but not an equals() method.  Therefore, the class may violate the invariant that equal objects must have equal hashcodes.

@@ -1,0 +1,1 @@
+This call doesn't pass any objects to the EasyMock method, so the call doesn't do anything.

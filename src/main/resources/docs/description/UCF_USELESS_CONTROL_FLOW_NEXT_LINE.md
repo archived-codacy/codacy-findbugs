@@ -1,0 +1,1 @@
+This method contains a useless control flow statement in which control flow follows to the same or following line regardless of whether or not the branch is taken. Often, this is caused by inadvertently using an empty statement as the body of an if statement, e.g.: if (argv.length == 1); System.out.println("Hello, " + argv[0]);

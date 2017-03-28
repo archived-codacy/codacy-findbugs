@@ -1,0 +1,1 @@
+One of the arguments is uncompatible with the corresponding format string specifier. As a result, this will generate a runtime exception when executed. For example, String.format("%d", "1") will generate an exception, since the String "1" is incompatible with the format specifier %d.

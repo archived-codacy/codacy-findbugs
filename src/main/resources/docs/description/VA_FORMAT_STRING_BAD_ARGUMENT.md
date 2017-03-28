@@ -1,0 +1,1 @@
+The format string placeholder is incompatible with the corresponding argument. For example, System.out.println("%d\n", "hello"); The %d placeholder requires a numeric argument, but a string value is passed instead. A runtime exception will occur when this statement is executed.

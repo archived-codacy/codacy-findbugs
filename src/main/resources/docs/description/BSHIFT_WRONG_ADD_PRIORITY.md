@@ -1,0 +1,1 @@
+The code performs an operation like (x << 8 + y). Although this might be correct, probably it was meant to perform (x << 8) + y, but shift operation has a lower precedence, so it's actually parsed as x << (8 + y).
