@@ -1,0 +1,1 @@
+This class implements the Externalizable interface, but does not define a void constructor. When Externalizable objects are deserialized, they first need to be constructed by invoking the void constructor. Since this class does not have one, serialization and deserialization will fail at runtime.

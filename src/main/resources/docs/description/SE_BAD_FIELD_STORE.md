@@ -1,0 +1,1 @@
+A non-serializable value is stored into a non-transient field of a serializable class.

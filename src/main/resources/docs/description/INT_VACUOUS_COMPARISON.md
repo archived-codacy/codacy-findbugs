@@ -1,0 +1,1 @@
+There is an integer comparison that always returns the same value (e.g., x <= Integer.MAX_VALUE).

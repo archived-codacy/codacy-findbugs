@@ -1,0 +1,1 @@
+This method contains a reference known to be non-null with another reference known to be null.

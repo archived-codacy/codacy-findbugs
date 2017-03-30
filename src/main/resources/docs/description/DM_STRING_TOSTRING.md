@@ -1,0 +1,1 @@
+Calling String.toString() is just a redundant operation. Just use the String.

@@ -1,0 +1,1 @@
+(Javadoc) A ScheduledThreadPoolExecutor with zero core threads will never execute anything; changes to the max pool size are ignored.

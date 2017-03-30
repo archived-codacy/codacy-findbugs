@@ -1,0 +1,1 @@
+Class is a JUnit TestCase and implements the tearDown method. The tearDown method should call super.tearDown(), but doesn't.

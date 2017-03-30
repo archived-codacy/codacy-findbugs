@@ -1,0 +1,1 @@
+This method unconditionally invokes itself. This would seem to indicate an infinite recursive loop that will result in a stack overflow.

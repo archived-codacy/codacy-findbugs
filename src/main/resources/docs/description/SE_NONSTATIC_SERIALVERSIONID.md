@@ -1,0 +1,1 @@
+This class defines a serialVersionUID field that is not static.  The field should be made static if it is intended to specify the version UID for purposes of serialization.

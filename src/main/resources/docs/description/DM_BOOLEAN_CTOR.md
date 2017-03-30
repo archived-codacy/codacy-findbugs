@@ -1,0 +1,1 @@
+Creating new instances of java.lang.Boolean wastes memory, since Boolean objects are immutable and there are only two useful values of this type.  Use the Boolean.valueOf() method (or Java 1.5 autoboxing) to create Boolean objects instead.

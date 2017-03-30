@@ -1,0 +1,1 @@
+A final static field references an array and can be accessed by malicious code or by accident from another package. This code can freely modify the contents of the array.

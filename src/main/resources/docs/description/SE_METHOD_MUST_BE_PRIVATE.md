@@ -1,0 +1,1 @@
+This class implements the Serializable interface, and defines a method for custom serialization/deserialization. But since that method isn't declared private, it will be silently ignored by the serialization/deserialization API.

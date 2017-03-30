@@ -1,0 +1,1 @@
+This method calls wait() on a java.util.concurrent.locks.Condition object.  Waiting for a Condition should be done using one of the await() methods defined by the Condition interface.

@@ -1,0 +1,1 @@
+This loop doesn't seem to have a way to terminate (other than by perhaps throwing an exception).

@@ -1,0 +1,1 @@
+The equals(Object o) method shouldn't make any assumptions about the type of o. It should simply return false if o is not the same type as this.

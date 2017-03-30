@@ -1,0 +1,1 @@
+The class's static initializer creates an instance of the class before all of the static final fields are assigned.

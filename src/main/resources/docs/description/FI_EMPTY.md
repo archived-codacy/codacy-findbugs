@@ -1,0 +1,1 @@
+Empty finalize() methods are useless, so they should be deleted.

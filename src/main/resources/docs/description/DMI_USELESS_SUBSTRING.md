@@ -1,0 +1,1 @@
+This code invokes substring(0) on a String, which returns the original value.

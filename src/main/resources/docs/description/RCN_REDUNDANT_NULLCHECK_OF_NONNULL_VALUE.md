@@ -1,0 +1,1 @@
+This method contains a redundant check of a known non-null value against the constant null.

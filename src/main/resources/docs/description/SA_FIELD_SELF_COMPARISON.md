@@ -1,0 +1,1 @@
+This method compares a field with itself, and may indicate a typo or a logic error. Make sure that you are comparing the right things.

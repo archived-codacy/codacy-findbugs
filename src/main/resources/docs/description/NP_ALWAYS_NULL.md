@@ -1,0 +1,1 @@
+A null pointer is dereferenced here.  This will lead to a NullPointerException when the code is executed.

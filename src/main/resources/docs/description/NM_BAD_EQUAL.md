@@ -1,0 +1,1 @@
+This class defines a method equal(Object).  This method does not override the equals(Object) method in java.lang.Object, which is probably what was intended.

@@ -1,0 +1,1 @@
+This method contains a redundant comparison of two references known to both be definitely null.

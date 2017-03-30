@@ -1,0 +1,1 @@
+Methods should be verbs, in mixed case with the first letter lowercase, with the first letter of each internal word capitalized.

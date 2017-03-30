@@ -1,0 +1,1 @@
+A mutable static field could be changed by malicious code or by accident. The field could be made package protected to avoid this vulnerability.

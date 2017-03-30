@@ -1,0 +1,1 @@
+Waiting on a monitor while two locks are held may cause deadlock.   Performing a wait only releases the lock on the object being waited on, not any other locks.   This not necessarily a bug, but is worth examining closely.

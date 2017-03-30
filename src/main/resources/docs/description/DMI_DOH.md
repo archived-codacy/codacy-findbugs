@@ -1,0 +1,1 @@
+This partical method invocation doesn't make sense, for reasons that should be apparent from inspection.

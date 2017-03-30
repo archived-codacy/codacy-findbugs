@@ -1,0 +1,1 @@
+A collection is added to itself. As a result, computing the hashCode of this set will throw a StackOverflowException.

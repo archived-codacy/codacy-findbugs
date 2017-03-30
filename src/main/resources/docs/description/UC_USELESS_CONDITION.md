@@ -1,0 +1,1 @@
+This condition always produces the same result as the value of the involved variable was narrowed before. Probably something else was meant or condition can be removed.

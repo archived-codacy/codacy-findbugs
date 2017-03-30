@@ -1,0 +1,1 @@
+Class implements Cloneable but does not define or use the clone method.

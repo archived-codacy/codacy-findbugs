@@ -1,0 +1,1 @@
+A class's finalize() method should have protected access, not public.
