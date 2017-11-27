@@ -21,6 +21,7 @@ project/plugins/project/
 bin/
 /db
 .eclipse
+.idea
 /lib/
 /logs/
 /modules
