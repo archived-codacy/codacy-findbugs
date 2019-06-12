@@ -2,7 +2,7 @@ package codacy.findbugs
 
 import java.nio.file.Path
 
-import codacy.dockerApi.traits._
+import com.codacy.tools.scala.seed.traits.{Builder, MavenBuilder}
 
 object BuilderFactory {
 

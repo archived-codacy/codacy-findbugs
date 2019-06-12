@@ -1,6 +1,6 @@
 package codacy
 
-import codacy.dockerApi.DockerEngine
 import codacy.findbugs.FindBugs
+import com.codacy.tools.scala.seed.DockerEngine
 
-object Engine extends DockerEngine(FindBugs)
+object Engine extends DockerEngine(FindBugs)()
