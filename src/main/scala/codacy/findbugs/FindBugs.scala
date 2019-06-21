@@ -106,7 +106,7 @@ object FindBugs extends Tool {
   }
 
   private[this] def isFileEnabled(path: String, filesOpt: Option[Set[Source.File]]): Boolean = {
-    filesOpt.fold(true) { files => files.exists( filePath => Paths.get(filePath.path).toAbsolutePath == path) }
+    filesOpt.fold(true) { files => files.exists( filePath => Paths.get(filePath.path).toAbsolutePath.toString == path) }
   }
 
   private[this] def resultsFromBugInstances(bugs: Seq[BugInstance],
