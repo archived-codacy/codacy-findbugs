@@ -3,7 +3,7 @@ package codacy.findbugs
 import java.io.File
 import java.nio.file.{Path, Paths}
 
-import com.codacy.plugins.api.results.Result.{FileError, Issue}
+import scala.collection.Seq
 import com.codacy.plugins.api.{ErrorMessage, Options, Source}
 import com.codacy.plugins.api.results.{Pattern, Result, Tool}
 import com.codacy.tools.scala.seed.traits.Builder
@@ -32,10 +32,12 @@ private class SourceDirectory(val absolutePath: File) {
 
 object FindBugs extends Tool {
 
-  def apply(source: Source.Directory,
-            configuration: Option[List[Pattern.Definition]],
-            files: Option[Set[Source.File]],
-            options: Map[Options.Key, Options.Value])(implicit specification: Tool.Specification): Try[List[Result]] = {
+  def apply(
+      source: Source.Directory,
+      configuration: Option[List[Pattern.Definition]],
+      files: Option[Set[Source.File]],
+      options: Map[Options.Key, Options.Value]
+  )(implicit specification: Tool.Specification): Try[List[Result]] = {
     val path = Paths.get(source.path)
     BuilderFactory(path) match {
       case Some(builder) =>
@@ -53,7 +55,11 @@ object FindBugs extends Tool {
 
   private lazy val defaultCmd = List("/bin/bash", "findbugs-cli.sh", "-xml:withMessages", "-output", "/tmp/output.xml")
 
-  private[this] def toolCommand(path: Path, conf: Option[List[Pattern.Definition]], builder: Builder): (List[String], Array[File]) = {
+  private[this] def toolCommand(
+      path: Path,
+      conf: Option[List[Pattern.Definition]],
+      builder: Builder
+  ): (List[String], Array[File]) = {
 
     lazy val nativeConf = FileHelper.findConfigurationFile(path, configFilenames).map(_.toString)
     lazy val excludeFile = FileHelper.findConfigurationFile(path, excludeFilenames).map(_.toString)
@@ -67,17 +73,18 @@ object FindBugs extends Tool {
     (defaultCmd ++ rulesParams ++ targetDirs, sourceDirs)
   }
 
-  private[this] def processTool(path: Path,
-                                conf: Option[List[Pattern.Definition]],
-                                files: Option[Set[Source.File]],
-                                builder: Builder): Try[List[Result]] = {
+  private[this] def processTool(
+      path: Path,
+      conf: Option[List[Pattern.Definition]],
+      files: Option[Set[Source.File]],
+      builder: Builder
+  ): Try[List[Result]] = {
 
     val (command, sourceDirs) = toolCommand(path, conf, builder)
     CommandRunner.exec(command) match {
       case Left(throwable) => Failure(throwable)
       case Right(output) if output.exitCode != 0 =>
-        Failure(new Exception(
-          s"""Can't execute tool
+        Failure(new Exception(s"""Can't execute tool
              |stdout: ${output.stdout.mkString(Properties.lineSeparator)}
              |stderr: ${output.stderr.mkString(Properties.lineSeparator)}
            """.stripMargin))
@@ -93,10 +100,11 @@ object FindBugs extends Tool {
   private[this] def elementPathAndLine(elem: Node): Option[Seq[Occurence]] = {
     for {
       start <- elem.attribute("start")
-      sourcepath <- elem.attribute("sourcepath")
+      sourcePath <- elem.attribute("sourcepath")
     } yield {
-      (start zip sourcepath).map { case (startNode, sourcePathNode) =>
-        new Occurence(startNode.text.toInt, sourcePathNode.text)
+      (start zip sourcePath).map {
+        case (startNode, sourcePathNode) =>
+          new Occurence(startNode.text.toInt, sourcePathNode.text)
       }
     }
   }
@@ -106,13 +114,17 @@ object FindBugs extends Tool {
   }
 
   private[this] def isFileEnabled(path: String, filesOpt: Option[Set[Source.File]]): Boolean = {
-    filesOpt.fold(true) { files => files.exists( filePath => Paths.get(filePath.path).toAbsolutePath.toString == path) }
+    filesOpt.fold(true) { files =>
+      files.exists(filePath => Paths.get(filePath.path).toAbsolutePath.toString == path)
+    }
   }
 
-  private[this] def resultsFromBugInstances(bugs: Seq[BugInstance],
-                                            sourceDirs: Array[File],
-                                            files: Option[Set[Source.File]],
-                                            builder: Builder): Seq[Result] = {
+  private[this] def resultsFromBugInstances(
+      bugs: Seq[BugInstance],
+      sourceDirs: Array[File],
+      files: Option[Set[Source.File]],
+      builder: Builder
+  ): Seq[Result] = {
     val sourceDirectories = sourceDirs.map { dir =>
       val components = Seq(dir.getAbsolutePath) ++ builder.pathComponents
       val dirPath = components.mkString(File.separator)
@@ -125,14 +137,15 @@ object FindBugs extends Tool {
       val results: Seq[Result] = foundOriginDirectories.collect {
         case directory if foundOriginDirectories.length == 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
           val filename = sourceFileName(directory, bug)
-          Result.Issue(Source.File(filename),
+          Result.Issue(
+            Source.File(filename),
             Result.Message(bug.message),
             Pattern.Id(bug.name),
-            Source.Line(bug.occurence.lineno))
+            Source.Line(bug.occurence.lineno)
+          )
         case directory if foundOriginDirectories.length > 1 && isFileEnabled(sourceFileName(directory, bug), files) =>
           val filename = sourceFileName(directory, bug)
-          Result.FileError(Source.File(filename),
-            Option(ErrorMessage("File duplicated in multiple directories.")))
+          Result.FileError(Source.File(filename), Option(ErrorMessage("File duplicated in multiple directories.")))
 
       }
       results
@@ -151,15 +164,15 @@ object FindBugs extends Tool {
       val patternName = bugInstance \@ "type"
       val message = (bugInstance \ "LongMessage").head.text
       val occurences = (if (sourceLineOccurences.nonEmpty) {
-        elementPathAndLine(sourceLineOccurences.head)
-      } else {
-        val methodSourceLine = bugInstance \ "Method"
-        if (methodSourceLine.nonEmpty) {
-          elementPathAndLine(methodSourceLine.head)
-        } else {
-          Option.empty
-        }
-      }) getOrElse Seq()
+                          elementPathAndLine(sourceLineOccurences.head)
+                        } else {
+                          val methodSourceLine = bugInstance \ "Method"
+                          if (methodSourceLine.nonEmpty) {
+                            elementPathAndLine(methodSourceLine.head)
+                          } else {
+                            Option.empty
+                          }
+                        }) getOrElse Seq()
       occurences.map(new BugInstance(patternName, message, _))
     }
   }
@@ -179,7 +192,6 @@ object FindBugs extends Tool {
   private[this] def collectTargets(path: Path, builder: Builder): Array[File] = {
     // Get the directories that can be projects (including subprojects and the current directory).
     val directories = path.toFile.listFiles.filter(_.isDirectory) ++ Seq(path.toFile)
-    directories.filter(directory =>
-      builder.targetOfDirectory(directory).fold(false)(target => new File(target).exists))
+    directories.filter(directory => builder.targetOfDirectory(directory).fold(false)(target => new File(target).exists))
   }
 }

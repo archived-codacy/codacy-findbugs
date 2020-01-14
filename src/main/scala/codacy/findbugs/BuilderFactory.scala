@@ -15,7 +15,7 @@ object BuilderFactory {
   )
 
   def apply(path: Path): Option[Builder] = {
-    val builders = knownBuilders.filter{ case builder => builder.supported(path)}
+    val builders = knownBuilders.filter { case builder => builder.supported(path) }
     builders.headOption
   }
 

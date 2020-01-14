@@ -38,3 +38,4 @@ server.pid
 # http://www.scala-sbt.org/release/docs/Getting-Started/Directories.html#configuring-version-control
 
 # Created by .ignore support plugin (hsz.mobi)
+.metals
